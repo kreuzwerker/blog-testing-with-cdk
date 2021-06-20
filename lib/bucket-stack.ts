@@ -8,7 +8,8 @@ export class BucketStack extends cdk.Stack {
     const bucket = new s3.Bucket(this, 'Bucket', {
       bucketName: `my-bucket-${environment}`
     });
+    cdk.Tags.of(bucket).add('abc', '123')
     cdk.Tags.of(bucket).add('environment', environment)
-
+    //cdk.Tags.of(bucket).add('xyz', '123')
   }
 }
