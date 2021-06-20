@@ -5,9 +5,10 @@ export class BucketStack extends cdk.Stack {
   constructor(environment: string, scope: cdk.Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
 
-    new s3.Bucket(this, 'Bucket', {
+    const bucket = new s3.Bucket(this, 'Bucket', {
       bucketName: `my-bucket-${environment}`
     });
+    cdk.Tags.of(bucket).add('environment', environment)
 
   }
 }
