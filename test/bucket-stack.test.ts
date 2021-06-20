@@ -4,9 +4,9 @@ import { BucketStack } from '../lib/bucket-stack';
 
 test('Bucket name', () => {
    const app = new cdk.App();
-   const stack = new BucketStack(app, 'MyTestStack');
+   const stack = new BucketStack('foo', app, 'MyTestStack');
 
    expect(stack).toHaveResource('AWS::S3::Bucket', {
-      BucketName: 'my-bucket'
+      BucketName: 'my-bucket-foo'
    });
 });

@@ -14,4 +14,4 @@ const stackProps = {
     },
   };
 
-new BucketStack(app, 'BucketStack', stackProps);
+new BucketStack('dev', app, 'BucketStack', stackProps);
