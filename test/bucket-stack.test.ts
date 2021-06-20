@@ -1,4 +1,4 @@
-import { expect as expectCDK, haveResourceLike, arrayWith } from '@aws-cdk/assert'
+import { expect as expectCDK, haveResourceLike, arrayWith, ResourcePart } from '@aws-cdk/assert'
 import '@aws-cdk/assert/jest';
 import * as cdk from '@aws-cdk/core';
 import { BucketStack } from '../lib/bucket-stack';
@@ -37,5 +37,15 @@ describe('Environment name applied', () => {
       }));
 
    });
+});
+
+test('Retention settings', () => {
+   const app = new cdk.App();
+   const stack = new BucketStack('foo', app, 'MyTestStack');
+
+   expect(stack).toHaveResource('AWS::S3::Bucket', {
+      UpdateReplacePolicy: 'Delete',
+      DeletionPolicy: 'Delete',
+   }, ResourcePart.CompleteDefinition);
 });
 

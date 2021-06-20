@@ -6,7 +6,8 @@ export class BucketStack extends cdk.Stack {
     super(scope, id, props);
 
     const bucket = new s3.Bucket(this, 'Bucket', {
-      bucketName: `my-bucket-${environment}`
+      bucketName: `my-bucket-${environment}`,
+      removalPolicy: cdk.RemovalPolicy.DESTROY
     });
     cdk.Tags.of(bucket).add('abc', '123')
     cdk.Tags.of(bucket).add('environment', environment)
