@@ -21,6 +21,74 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@aws-cdk/aws-events@npm:1.109.0":
+  version: 1.109.0
+  resolution: "@aws-cdk/aws-events@npm:1.109.0"
+  dependencies:
+    "@aws-cdk/aws-iam": 1.109.0
+    "@aws-cdk/core": 1.109.0
+    constructs: ^3.3.69
+  peerDependencies:
+    "@aws-cdk/aws-iam": 1.109.0
+    "@aws-cdk/core": 1.109.0
+    constructs: ^3.3.69
+  checksum: 5aff8a65d20b182a08836a4c8cf56cfc953737b54e9ab5de620bb34835f4cdfe14c80c60fd785f1e387fbe68b968aa569b1bc12f9fdfe41230ecd246dfc47b60
+  languageName: node
+  linkType: hard
+
+"@aws-cdk/aws-iam@npm:1.109.0":
+  version: 1.109.0
+  resolution: "@aws-cdk/aws-iam@npm:1.109.0"
+  dependencies:
+    "@aws-cdk/core": 1.109.0
+    "@aws-cdk/region-info": 1.109.0
+    constructs: ^3.3.69
+  peerDependencies:
+    "@aws-cdk/core": 1.109.0
+    "@aws-cdk/region-info": 1.109.0
+    constructs: ^3.3.69
+  checksum: 35b30dcfdcff60c638a2a48177c126979e568e013c9a4f4cbbb2b1b0cf57b3a35088b6ba252d9189336716467223abfeb83cdc5c5b5d69b3491d17bd6981a8f3
+  languageName: node
+  linkType: hard
+
+"@aws-cdk/aws-kms@npm:1.109.0":
+  version: 1.109.0
+  resolution: "@aws-cdk/aws-kms@npm:1.109.0"
+  dependencies:
+    "@aws-cdk/aws-iam": 1.109.0
+    "@aws-cdk/core": 1.109.0
+    "@aws-cdk/cx-api": 1.109.0
+    constructs: ^3.3.69
+  peerDependencies:
+    "@aws-cdk/aws-iam": 1.109.0
+    "@aws-cdk/core": 1.109.0
+    "@aws-cdk/cx-api": 1.109.0
+    constructs: ^3.3.69
+  checksum: 9de3ec9532c4dcce83c9962bbefc70f2b4b247109329c2d929f71128005ae88712e32bc22061a04131bfa95b1db5ddea1bf60edbf9d4b5f09bdab5b74c81e035
+  languageName: node
+  linkType: hard
+
+"@aws-cdk/aws-s3@npm:1.109.0":
+  version: 1.109.0
+  resolution: "@aws-cdk/aws-s3@npm:1.109.0"
+  dependencies:
+    "@aws-cdk/aws-events": 1.109.0
+    "@aws-cdk/aws-iam": 1.109.0
+    "@aws-cdk/aws-kms": 1.109.0
+    "@aws-cdk/core": 1.109.0
+    "@aws-cdk/cx-api": 1.109.0
+    constructs: ^3.3.69
+  peerDependencies:
+    "@aws-cdk/aws-events": 1.109.0
+    "@aws-cdk/aws-iam": 1.109.0
+    "@aws-cdk/aws-kms": 1.109.0
+    "@aws-cdk/core": 1.109.0
+    "@aws-cdk/cx-api": 1.109.0
+    constructs: ^3.3.69
+  checksum: 3e3c61b06f962f0e5ee1ca18ca5d5713f95811b9393f530aeb6c1dfc0c7e9e6f27aa2aaf88cbbf89df631f756d520b88d9b53b9e88ccc0a5f8e9ad83f7b8e59a
+  languageName: node
+  linkType: hard
+
 "@aws-cdk/cfnspec@npm:1.109.0":
   version: 1.109.0
   resolution: "@aws-cdk/cfnspec@npm:1.109.0"
@@ -1380,6 +1448,7 @@ __metadata:
   resolution: "blog-testing-with-cdk@workspace:."
   dependencies:
     "@aws-cdk/assert": 1.109.0
+    "@aws-cdk/aws-s3": 1.109.0
     "@aws-cdk/cloud-assembly-schema": 1.109.0
     "@aws-cdk/core": 1.109.0
     "@types/jest": ^26.0.10
