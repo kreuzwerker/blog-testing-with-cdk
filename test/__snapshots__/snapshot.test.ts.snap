@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`bucket stack 1`] = `
+Object {
+  "Resources": Object {
+    "Bucket83908E77": Object {
+      "DeletionPolicy": "Delete",
+      "Properties": Object {
+        "BucketName": "my-bucket-foo",
+        "Tags": Array [
+          Object {
+            "Key": "abc",
+            "Value": "123",
+          },
+          Object {
+            "Key": "environment",
+            "Value": "foo",
+          },
+        ],
+      },
+      "Type": "AWS::S3::Bucket",
+      "UpdateReplacePolicy": "Delete",
+    },
+  },
+}
+`;

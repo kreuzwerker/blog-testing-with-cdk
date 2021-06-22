@@ -12,7 +12,5 @@ export class BucketStack extends cdk.Stack {
     cdk.Tags.of(bucket).add('abc', '123')
     cdk.Tags.of(bucket).add('environment', environment)
     //cdk.Tags.of(bucket).add('xyz', '123')
-
-    new s3.Bucket(this, 'OtherBucket');
   }
 }
