@@ -7,6 +7,7 @@ This project was initially created via `cdk init` and npm replaced with yarn.
 ## Useful commands
 
  * `yarn build`   compile typescript to js
- * `yarn test`    perform the jest unit tests
+ * `yarn test`    perform the tests
+ * `yarn test -u`    perform the tests and update snapshots
  * `yarn cdk deploy`      deploy this stack
  * `yarn cdk synth`       emits the synthesized CloudFormation template
