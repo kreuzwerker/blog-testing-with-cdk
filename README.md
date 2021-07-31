@@ -1,8 +1,8 @@
-# Infrastructure Testing with CDK
+# Infrastructure Tests with CDK
 
-Project that contains samples used in blog post.
+This repo contains the samples used in the [Infrastructure Tests with CDK](https://kreuzwerker.de/post/infrastructure-tests-with-cdk) blog posts.
 
-Projet was initially created via `cdk init` and npm replaced with yarn.
+This project was initially created via `cdk init` and npm replaced with yarn.
 
 ## Useful commands
 
